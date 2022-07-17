@@ -36,4 +36,18 @@ print(sumNum(40) == 4)
 print(sumNum(48) == 3) 
 print(sumNum(2) == 2) 
 
-# не  розібрався 
+
+
+
+def sumNum(num):
+
+    while num > 9:
+        # https://stackoverflow.com/questions/1546846/str-in-pythons-map-and-sum
+        num = sum(map(int, str(num)))
+    return num
+
+
+print(sumNum(38) == 2)
+print(sumNum(40) == 4)
+print(sumNum(48) == 3)
+print(sumNum(2) == 2)
