@@ -35,3 +35,5 @@ print(sumNum(38) == 2)
 print(sumNum(40) == 4)
 print(sumNum(48) == 3) 
 print(sumNum(2) == 2) 
+
+# не  розібрався 

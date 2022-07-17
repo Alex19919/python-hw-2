@@ -15,8 +15,26 @@
 # commonStr('good day', 'good morning') -> 'god'
 
 
-def commonStr(str1, str2):
-    return ''
+# def commonStr(str1, str2):
+#     return ''
 
-print(commonStr('loli', 'luck') == 'l') 
-print(commonStr('good day', 'good morning') == 'god') 
+# print(commonStr('loli', 'luck') == 'l') 
+# print(commonStr('good day', 'good morning') == 'god') 
+
+
+def commonStr(str1, str2):
+    start = set(str1).intersection(set(str2))
+    end = ''
+    for x in start:
+        end += x
+    print(end)
+    return end
+
+
+print(commonStr('loli', 'luck') == 'l')
+print(commonStr('good day', 'good morning') == 'god')
+
+
+
+
+# повністю не розібрався ...приклади  переглядав на сайтах
